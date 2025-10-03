@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <!-- PENTING: sesuaikan dengan nama repo -->
-    <base href="/web/" />
+<head>
+  <!-- WAJIB: paling atas -->
+  <base href="/web/" />
 
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="manifest" href="manifest.json" />
-    <title>Kemon Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Kemon Web</title>
 
-    <script>
-      // Gunakan path relatif terhadap /web/
-      window.flutterConfiguration = { canvasKitBaseUrl: "canvaskit/" };
-      // Nonaktifkan SW di Pages agar tidak ngunci versi lama
-      self.__flutter_service_worker = undefined;
-    </script>
-    <script src="flutter.js" defer></script>
-  </head>
-  <body>
-    <!-- Bootstrap default Flutter -->
-    <script src="flutter_bootstrap.js" async></script>
-  </body>
-</html>
+  <script>
+    // Arahkan CanvasKit relatif ke /web/
+    window.flutterConfiguration = { canvasKitBaseUrl: "canvaskit/" };
+    // Nonaktifkan SW agar tidak nge-cache versi lama
+    self.__flutter_service_worker = undefined;
+  </script>
+
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>

@@ -1,22 +1,39 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <!-- WAJIB: paling atas -->
-  <base href="/web/" />
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="manifest" href="manifest.json" />
-  <title>Kemon Web</title>
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-  <script>
-    // Arahkan CanvasKit relatif ke /web/
-    window.flutterConfiguration = { canvasKitBaseUrl: "canvaskit/" };
-    // Nonaktifkan SW agar tidak nge-cache versi lama
-    self.__flutter_service_worker = undefined;
-  </script>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-  <script src="flutter.js" defer></script>
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="DistroNote">
+  <link rel="apple-touch-icon" href="assets/icons/distronote_logo.png">
+
+  <!-- Favicon -->
+  <!-- Use Flutter asset as favicon during development -->
+  <link rel="icon" type="image/png" href="assets/icons/distronote_logo.png"/>
+
+  <title>DistroNote</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
 </body>
+</html>
